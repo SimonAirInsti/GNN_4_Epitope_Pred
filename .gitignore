@@ -8,11 +8,13 @@ data/epitope3d/embeddings/
 data/epitope3d/pdb_structure/
 data/epitope3d/README.md
 
+data_new
+
 
 src/mlruns
 src/models/trained_model
 src/feature_generation/adapt_original_ds/
-src/data/
+
 
 
 latex/
