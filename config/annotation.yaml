@@ -1,0 +1,22 @@
+paths:
+  csv_path: data_new/splits_final/abag_split.csv
+  cif_dir: data_new/splits_final
+  output_db_dir: data_new/database
+
+filter:
+  holo_only: true
+  allowed_agtypes: [PROTEIN, PEPTIDE, ION]
+  drop_ion_only: true
+  min_ag_seq_length: 25
+  allowed_antibody_types: [FAB, FV]
+
+annotation:
+  contact_cutoff: 4.5
+  rsa_threshold: 0.0
+  sasa_point_number: 100
+  min_chain_residues: 5
+
+logging:
+  level: INFO
+  log_to_file: true
+  progress_interval: 50
