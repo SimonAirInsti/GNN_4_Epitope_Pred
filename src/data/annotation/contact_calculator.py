@@ -67,8 +67,3 @@ def compute_contacts(ag_coords, ab_coords):
 def compute_paratope(ab_coords, ag_coords):
     """Compute min distance from each antibody residue to any antigen atom."""
     return compute_distances(ab_coords, ag_coords)["query_dists"]
-
-
-def compute_contact_pairs(ag_coords, ab_coords, cutoff=4.5):
-    """For each antigen residue in contact, identify nearest antibody residue."""
-    return compute_distances(ag_coords, ab_coords, cutoff=cutoff)["contact_pairs"]
